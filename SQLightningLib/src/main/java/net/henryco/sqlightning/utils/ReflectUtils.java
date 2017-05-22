@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by HenryCo on 12/05/17.
@@ -86,7 +87,7 @@ public final class ReflectUtils {
 
 
 	public static String getMethodNameFromField(String field) {
-		String firstSym = String.valueOf(field.charAt(0)).toUpperCase();
+		String firstSym = String.valueOf(field.charAt(0)).toUpperCase(Locale.US);
 		return firstSym.concat(field.substring(1));
 	}
 

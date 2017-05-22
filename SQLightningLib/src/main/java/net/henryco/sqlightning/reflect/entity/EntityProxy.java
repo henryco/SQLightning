@@ -8,6 +8,7 @@ import java.lang.reflect.Method;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by HenryCo on 19/05/17.
@@ -36,7 +37,7 @@ public class EntityProxy implements InvocationHandler {
 		if (methodName.startsWith("set") || methodName.startsWith("get")) {
 
 			String fieldName = methodName.substring(3, methodName.length());
-			String firstSym = String.valueOf(methodName.charAt(0)).toLowerCase();
+			String firstSym = String.valueOf(methodName.charAt(0)).toLowerCase(Locale.US);
 			fieldName = firstSym.concat(fieldName.substring(1));
 
 			for (Field field: entityClass.getDeclaredFields()) {
