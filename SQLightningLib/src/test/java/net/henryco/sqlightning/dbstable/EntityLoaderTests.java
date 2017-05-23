@@ -74,15 +74,6 @@ public class EntityLoaderTests {
 	}
 
 	@Test
-	public void testCreateDataBaseOne() {
-		SQLightning.setDebugEnable(false);
-		String result = SQLightning.run(getAppContext(), ConfigurationOne.class);
-		String result2 = SQLightning.run(getAppContext(), ConfigurationOne.class);
-		Assert.assertNotEquals(SQLightning.RUN_MORE_THEN_ONE_TIME_MSG, result);
-		Assert.assertEquals(SQLightning.RUN_MORE_THEN_ONE_TIME_MSG, result2);
-	}
-
-	@Test
 	public void testEntityLoaderOne() throws Exception {
 
 		Context context = getAppContext();
