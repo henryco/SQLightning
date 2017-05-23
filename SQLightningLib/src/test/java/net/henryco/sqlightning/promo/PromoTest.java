@@ -56,10 +56,7 @@ public class PromoTest {
 
 		SQLightning.run(getAppContext(), ExampleConfig.class);
 
-
 		RepositoryBuilder repositoryBuilder = SQLightning.getRepositoryBuilder(getAppContext());
-
-
 
 		ExampleRepository repository = repositoryBuilder.create(ExampleRepository.class);
 
