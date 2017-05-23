@@ -2,7 +2,7 @@
 ##### Reflexive android java library that allows you to work with the built-in database easier way.
 
 <br>
-## installation
+<h2> installation </h2>
 Just add dependency to yours <b>build.gradle</b> file:
 
 ```
