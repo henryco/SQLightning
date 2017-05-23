@@ -42,6 +42,8 @@ public class DBDataBase extends SQLiteOpenHelper {
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		// TODO: 11/05/17
+		if (drop != null && !drop.isEmpty())
+			exec(db, drop);
 		if (dbExtraHelper != null)
 			dbExtraHelper.onUpgrade(db, oldVersion, newVersion, this);
 	}

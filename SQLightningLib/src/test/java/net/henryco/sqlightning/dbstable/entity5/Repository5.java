@@ -19,4 +19,5 @@ public interface Repository5 extends LightningRepository <Long, Entity5> {
 
 	@Implementation(RepoImp.class)
 	Object[] readSomeValues(long uid, Repository5 repository);
+
 }
