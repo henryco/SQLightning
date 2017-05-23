@@ -5,7 +5,7 @@
 <h2> installation </h2>
 Just add dependency to yours <b>build.gradle</b> file:
 
-```
+```Gradle
 compile group: 'org.mockito', name: 'mockito-core', version: '2.8.9'
 ```
 
