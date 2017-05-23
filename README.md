@@ -1,5 +1,5 @@
 # SQLightning
-##### Reflexive android java library that allows you to work with the built-in database easier way.
+###### Reflexive android java library that allows you to work with the built-in database easier way.
 
 <br>
 <h2> installation </h2>
