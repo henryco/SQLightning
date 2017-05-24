@@ -10,3 +10,4 @@ compile group: 'org.mockito', name: 'mockito-core', version: '2.8.9'
 ```
 <br><br>
 <h2> How to </h2>
+* [How into in 5 min](https://github.com/henryco/SQLightning/wiki/How-into-in-5-min)
