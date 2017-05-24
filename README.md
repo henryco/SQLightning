@@ -1,4 +1,4 @@
-# SQLightning <br>[![codebeat badge](https://codebeat.co/badges/ce4e6e00-cb0b-4b99-bb15-b56a01305d1c)](https://codebeat.co/projects/github-com-henryco-sqlightning-master)
+# SQLightning <br>[![codebeat badge](https://codebeat.co/badges/ce4e6e00-cb0b-4b99-bb15-b56a01305d1c)](https://codebeat.co/projects/github-com-henryco-sqlightning-master) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/henryco/SQLightning/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/com.github.henryco/sqlightning.svg)](http://repo1.maven.org/maven2/com/github/henryco/sqlightning/)
 ###### Reflexive android java library that allows you to work with the built-in database easier way.
 
 <br>
