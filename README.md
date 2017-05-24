@@ -2,7 +2,7 @@
 ###### Reflexive android java library that allows you to work with the built-in database easier way.
 
 <br>
-<h2> installation </h2
+<h2> installation </h2>
 First you need to add maven central repository into your project dependencies, then<br>
 
 <b>Gradle:</b>
