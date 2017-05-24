@@ -4,7 +4,8 @@
 <br>
 <h2> installation </h2>
 Just add dependency:
-<b>Gradle</b>
+<b>Gradle:</b>
+
 ```Gradle
   compile 'com.github.henryco:sqlightning:1.1.0'
 ```
