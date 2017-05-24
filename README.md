@@ -5,7 +5,7 @@
 <h2> installation </h2><br>
 <b>Gradle:</b>
 
-```Groovy
+```Gradle
 compile 'com.github.henryco:sqlightning:1.1.0'
 ```
 <br>
