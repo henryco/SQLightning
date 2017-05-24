@@ -8,8 +8,8 @@
 ```Gradle
 compile 'com.github.henryco:sqlightning:1.1.0'
 ```
-<b>Maven:</b>
 
+<b>Maven:</b><br>
 ```XML
 <dependency>
     <groupId>com.github.henryco</groupId>
