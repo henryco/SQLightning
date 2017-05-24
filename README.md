@@ -2,8 +2,7 @@
 ###### Reflexive android java library that allows you to work with the built-in database easier way.
 
 <br>
-<h2> installation </h2>
-Just add dependency:
+<h2> installation </h2><br>
 <b>Gradle:</b>
 
 ```Gradle
