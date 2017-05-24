@@ -3,8 +3,8 @@
 
 <br>
 <h2> installation </h2>
-Just add dependency to yours <b>build.gradle</b> file:
-
+Just add dependency:
+<b>Gradle</b>
 ```Gradle
   compile 'com.github.henryco:sqlightning:1.1.0'
 ```
