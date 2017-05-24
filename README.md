@@ -6,7 +6,7 @@
 <img src="https://raw.githubusercontent.com/henryco/SQLightning/master/howto/Screenshot%20from%202017-05-23%2023-59-23.png" height="70%" width="70%"/>
 
 <h2><br> installation </h2>
-First you need to add maven central repository into your project and then add dependency: <br><br>
+First you need to add maven central repository into your project and then add dependency: <br>
 
 <b>Gradle</b>
 
