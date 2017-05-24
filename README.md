@@ -1,6 +1,7 @@
 # SQLightning
+# [![codebeat badge](https://codebeat.co/badges/ce4e6e00-cb0b-4b99-bb15-b56a01305d1c)](https://codebeat.co/projects/github-com-henryco-sqlightning-master)
 ###### Reflexive android java library that allows you to work with the built-in database easier way.
-[![codebeat badge](https://codebeat.co/badges/ce4e6e00-cb0b-4b99-bb15-b56a01305d1c)](https://codebeat.co/projects/github-com-henryco-sqlightning-master)
+
 <br>
 <img src="https://raw.githubusercontent.com/henryco/SQLightning/master/howto/Screenshot%20from%202017-05-24%2000-29-26.png" height="70%" width="70%"/>
 <img src="https://raw.githubusercontent.com/henryco/SQLightning/master/howto/Screenshot%20from%202017-05-23%2023-59-23.png" height="70%" width="70%"/>
