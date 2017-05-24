@@ -10,7 +10,7 @@ compile 'com.github.henryco:sqlightning:1.1.0'
 ```
 <b>Maven:</b>
 
-```Maven
+```XML
 <dependency>
     <groupId>com.github.henryco</groupId>
     <artifactId>sqlightning</artifactId>
