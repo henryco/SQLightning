@@ -3,15 +3,15 @@
 
 <br>
 <h2> installation </h2>
-First you need to add maven central repository into your project dependencies, then<br>
+First you need to add maven central repository into your project and then add dependency: <br><br>
 
-<b>Gradle:</b>
+<b>Gradle</b>
 
 ```Groovy
 compile 'com.github.henryco:sqlightning:1.1.0'
 ```
 <br>
-<b>Maven:</b>
+<b>Maven</b>
 
 ```XML
 <dependency>
