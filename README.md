@@ -26,4 +26,4 @@ compile 'com.github.henryco:sqlightning:1.1.0'
 <br><h2> Getting started </h2>
 <h3> <a href="https://github.com/henryco/SQLightning/wiki/How-into-in-5-min"> - How into in 5 min </a></h3>
 <h3> <a href="https://github.com/henryco/SQLightning/wiki/Advanced-features"> - Advanced features </a></h3>
-<h3> <a href="https://github.com/henryco/SQLightning/wiki/Annotations-list"> - List of Annotations
+<h3> <a href="https://github.com/henryco/SQLightning/wiki/List-of-annotations"> - List of Annotations
