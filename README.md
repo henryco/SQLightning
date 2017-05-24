@@ -2,6 +2,8 @@
 ###### Reflexive android java library that allows you to work with the built-in database easier way.
 
 <br>
+<img src="https://raw.githubusercontent.com/henryco/SQLightning/master/howto/Screenshot%20from%202017-05-24%2000-29-26.png"/>
+<br>
 <h2> installation </h2>
 First you need to add maven central repository into your project and then add dependency: <br><br>
 
