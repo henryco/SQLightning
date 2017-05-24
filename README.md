@@ -3,6 +3,8 @@
 
 <br>
 <h2> installation </h2><br>
+First you need to add maven central repository into your project dependencies, then<br>
+
 <b>Gradle:</b>
 
 ```Groovy
