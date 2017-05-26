@@ -1,5 +1,5 @@
 # SQLightning <br>[![codebeat badge](https://codebeat.co/badges/ce4e6e00-cb0b-4b99-bb15-b56a01305d1c)](https://codebeat.co/projects/github-com-henryco-sqlightning-master) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/henryco/SQLightning/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/com.github.henryco/sqlightning.svg)](http://repo1.maven.org/maven2/com/github/henryco/sqlightning/)
-###### Reflexive android java library that allows you to work with the built-in database easier way.
+###### Reflective android java library that allows you to work with the built-in database easier way.
 
 <br>
 <img src="https://raw.githubusercontent.com/henryco/SQLightning/master/howto/Screenshot%20from%202017-05-24%2000-29-26.png" height="70%" width="70%"/>
