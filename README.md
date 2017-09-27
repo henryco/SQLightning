@@ -19,7 +19,7 @@ compile 'com.github.henryco:sqlightning:1.1.2'
 <dependency>
     <groupId>com.github.henryco</groupId>
     <artifactId>sqlightning</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.2</version>
 </dependency>
 ```
 
