@@ -27,7 +27,7 @@ public class EntitySaveProcessor implements MetaEntitySaverExec {
 		Column column = field.getAnnotation(Column.class);
 		String columnName = Column.methods.getColumnName(column, field);
 		Object value = ReflectUtils.getFieldValue(instance, field);
-		return MetaSaverExec.methods.setTypedObject(values, columnName, value);
+		return MetaSaverExec.methods.setTypedObject(values, columnName, value, field.getType());
 	}
 
 

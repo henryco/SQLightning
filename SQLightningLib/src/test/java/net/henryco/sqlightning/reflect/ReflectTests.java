@@ -176,4 +176,14 @@ public class ReflectTests {
 
 	}
 
+	@Test
+	public void fieldClass() throws Exception {
+
+		class Some {
+			String fieldo;
+		}
+
+		Field fieldo = Some.class.getDeclaredField("fieldo");
+		System.out.println(fieldo.getType());
+	}
 }

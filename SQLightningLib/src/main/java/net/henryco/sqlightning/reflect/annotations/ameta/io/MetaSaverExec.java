@@ -39,13 +39,12 @@ public interface MetaSaverExec {
 			return null;
 		}
 
-		public static ContentValues setTypedObject(
-				final ContentValues values,
-				final String columnName,
-				final Object object
-		) {
-			final Class oc = object.getClass();
+		public static ContentValues setTypedObject(final ContentValues values,
+		                                           final String columnName,
+		                                           final Object object,
+		                                           final Class<?> objectClass) {
 
+			final Class oc = objectClass;
 			if (oc == String.class) {
 				values.put(columnName, (String) object);
 				return values;
@@ -77,6 +76,12 @@ public interface MetaSaverExec {
 				values.put(columnName, ((boolean) object));
 
 			return values;
+		}
+
+		public static ContentValues setTypedObject(final ContentValues values,
+		                                           final String columnName,
+		                                           final Object object) {
+			return setTypedObject(values, columnName, object, object.getClass());
 		}
 
 	}
