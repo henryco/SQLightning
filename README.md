@@ -10,7 +10,7 @@ First you need to add maven central repository into your project and then add de
 <b>Gradle</b>
 
 ```Groovy
-compile 'com.github.henryco:sqlightning:1.1.0'
+compile 'com.github.henryco:sqlightning:1.1.3'
 ```
 <br>
 <b>Maven</b>
@@ -19,7 +19,7 @@ compile 'com.github.henryco:sqlightning:1.1.0'
 <dependency>
     <groupId>com.github.henryco</groupId>
     <artifactId>sqlightning</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.3</version>
 </dependency>
 ```
 

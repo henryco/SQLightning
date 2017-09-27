@@ -33,7 +33,7 @@ public class ArraySaveProcessor implements MetaSaverExec {
 		for (Field f: instance.getClass().getDeclaredFields()) {
 			if (f.getAnnotation(Id.class) != null) {
 				Object key = ReflectUtils.getFieldValue(instance, f);
-				arrValues = methods.setTypedObject(arrValues, Array.ID_COLUMN, key);
+				arrValues = methods.setTypedObject(arrValues, Array.ID_COLUMN, key, f.getType());
 				break;
 			}
 		}
@@ -45,7 +45,7 @@ public class ArraySaveProcessor implements MetaSaverExec {
 		for (int i = 0; i < arrLimit; i++) {
 			Object arrElement = adapter.get(arrayInstance, i);
 			String elementIndexName = Array.methods.getArrayIndexName(i);
-			arrValues = methods.setTypedObject(arrValues, elementIndexName, arrElement);
+			arrValues = methods.setTypedObject(arrValues, elementIndexName, arrElement, arrElement.getClass());
 		}
 
 		final String arrTabName = Array.methods.getArrayName(field, tableName);

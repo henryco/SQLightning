@@ -78,11 +78,11 @@ public interface MetaSaverExec {
 			return values;
 		}
 
-		public static ContentValues setTypedObject(final ContentValues values,
-		                                           final String columnName,
-		                                           final Object object) {
-			return setTypedObject(values, columnName, object, object.getClass());
-		}
+//		public static ContentValues setTypedObject(final ContentValues values,
+//		                                           final String columnName,
+//		                                           final Object object) {
+//			return setTypedObject(values, columnName, object, object.getClass());
+//		}
 
 	}
 }

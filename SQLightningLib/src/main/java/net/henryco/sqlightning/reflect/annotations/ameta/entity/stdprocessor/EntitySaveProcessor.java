@@ -37,7 +37,7 @@ public class EntitySaveProcessor implements MetaEntitySaverExec {
 
 		ContentValues values = new ContentValues();
 		if (parentKey != null)
-			values = MetaSaverExec.methods.setTypedObject(values, Relation.RELATED_KEY, parentKey);
+			values = MetaSaverExec.methods.setTypedObject(values, Relation.RELATED_KEY, parentKey, parentKey.getClass());
 
 		final ActionTree actionTree = new ActionTree();
 		final Class entityClass = entity.getClass();

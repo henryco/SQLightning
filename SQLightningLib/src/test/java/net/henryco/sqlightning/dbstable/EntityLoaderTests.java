@@ -40,6 +40,7 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -54,6 +55,16 @@ public class EntityLoaderTests {
 
 
 	private Activity activity;
+
+
+	private static String forceRun(Context context, Class rootClass, Class ... classes) throws Exception {
+
+		Method method = SQLightning.class.getDeclaredMethod("forceRun", Context.class, Class.class, Class[].class);
+		method.setAccessible(true);
+		return (String) method.invoke(null, context, rootClass, classes);
+	}
+
+
 
 	@Before
 	public void setUp() throws Exception {
@@ -86,7 +97,7 @@ public class EntityLoaderTests {
 		final long id2 = 464123;
 
 		SQLightning.setDebugEnable(false);
-		SQLightning.forceRun(context, ConfigurationOne.class);
+		forceRun(context, ConfigurationOne.class);
 		SQLiteDatabase writableDatabase = SQLightning.getDataBaseHelper(context).getWritableDatabase();
 
 		ContentValues values1 = new ContentValues();
@@ -123,7 +134,7 @@ public class EntityLoaderTests {
 
 		Context context = getAppContext();
 		SQLightning.setDebugEnable(false);
-		SQLightning.forceRun(context, ConfigurationTwo.class);
+		forceRun(context, ConfigurationTwo.class);
 		SQLiteDatabase writableDatabase = SQLightning.getDataBaseHelper(context).getWritableDatabase();
 
 		final long id = 21456;
@@ -192,12 +203,12 @@ public class EntityLoaderTests {
 
 
 	@Test
-	public void innerTablesTestOne() {
+	public void innerTablesTestOne() throws Exception {
 
 		Context context = getAppContext();
 
 		SQLightning.setDebugEnable(false);
-		SQLightning.forceRun(context, ConfigurationThree.class);
+		forceRun(context, ConfigurationThree.class);
 
 		Entity31 inner = new Entity31();
 		inner.setUid(98621);
@@ -221,11 +232,11 @@ public class EntityLoaderTests {
 	}
 
 	@Test
-	public void tableWithArrayTest() {
+	public void tableWithArrayTest() throws Exception {
 		Context context = getAppContext();
 
 		SQLightning.setDebugEnable(false);
-		String res = SQLightning.forceRun(context, ConfigurationFour.class);
+		String res = forceRun(context, ConfigurationFour.class);
 
 		Entity4 entity4 = new Entity4();
 		entity4.setId(2351);
@@ -299,11 +310,11 @@ public class EntityLoaderTests {
 	}
 
 	@Test
-	public void emptyArraysTest() {
+	public void emptyArraysTest() throws Exception {
 
 		SQLightning.setDebugEnable(false);
 		Context context = getAppContext();
-		SQLightning.forceRun(context, ConfigurationFour.class);
+		forceRun(context, ConfigurationFour.class);
 
 		RepositoryBuilder builder = new RepositoryBuilder(SQLightning.getDataBaseHelper(context));
 		Repo4 repository = builder.create(Repo4.class);
@@ -323,11 +334,11 @@ public class EntityLoaderTests {
 
 
 	@Test
-	public void deleteTest() {
+	public void deleteTest() throws Exception {
 
 		SQLightning.setDebugEnable(false);
 		Context context = getAppContext();
-		String result = SQLightning.forceRun(context, Config5.class);
+		String result = forceRun(context, Config5.class);
 
 		RepositoryBuilder builder = new RepositoryBuilder(SQLightning.getDataBaseHelper(context));
 		Repository5 repository = builder.create(Repository5.class);
@@ -408,11 +419,11 @@ public class EntityLoaderTests {
 	}
 
 	@Test
-	public void entityUpdateTest() {
+	public void entityUpdateTest() throws Exception {
 
 		final Context context = getAppContext();
 		SQLightning.setDebugEnable(false);
-		SQLightning.forceRun(context, Config5.class);
+		forceRun(context, Config5.class);
 
 		RepositoryBuilder builder = new RepositoryBuilder(SQLightning.getDataBaseHelper(context));
 		LightningRepository<Long, Entity5> repository = builder.create(LightningRepository.class, "table_entity_5", Long.class, Entity5.class);
@@ -469,11 +480,11 @@ public class EntityLoaderTests {
 
 
 	@Test
-	public void queryTest() {
+	public void queryTest() throws Exception {
 
 		final Context context = getAppContext();
 		SQLightning.setDebugEnable(false);
-		SQLightning.forceRun(context, Config5.class);
+		forceRun(context, Config5.class);
 		RepositoryBuilder builder = SQLightning.getRepositoryBuilder(context);
 		Repository5 repository = builder.create(Repository5.class);
 

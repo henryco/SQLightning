@@ -64,7 +64,7 @@ public class EntityUpdateProcessor implements MetaEntityUpdaterExec {
 				}
 				if (updater == null) {
 					Object value = ReflectUtils.getFieldValue(entity, field);
-					contentValues = MetaUpdaterExec.methods.setTypedObject(contentValues, columnName, value);
+					contentValues = MetaUpdaterExec.methods.setTypedObject(contentValues, columnName, value, field.getType());
 				}
 			}
 		}

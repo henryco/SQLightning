@@ -91,21 +91,21 @@ public class SQLightning {
 	/**
 	 * For tests only!
 	 */
-	public static String forceRun(Context context, Object rootObjInstance, Class ... configurations) {
+	private static String forceRun(Context context, Object rootObjInstance, Class ... configurations) {
 		return forceRun(context, rootObjInstance.getClass(), configurations);
 	}
 
 	/**
 	 * For tests only!
 	 */
-	public static String forceRun(Context context, Class rootClass, Class ... configurations) {
+	private static String forceRun(Context context, Class rootClass, Class ... configurations) {
 		return forceRun(context, rootClass.getPackage(), findExtraConfig(rootClass, configurations));
 	}
 
 	/**
 	 * For tests only!
 	 */
-	public static synchronized String forceRun(Context context, Package rootPackage, Class ... configurations) {
+	private static synchronized String forceRun(Context context, Package rootPackage, Class ... configurations) {
 		DBSConfigurationFinder configurator = new DBSConfigurationFinder(rootPackage, configurations);
 		configurator.createConfiguration();
 

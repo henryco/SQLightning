@@ -38,7 +38,7 @@ public class ArrayUpdateProcessor implements MetaUpdaterExec {
 		for (int i = 0; i < arrLimit; i++) {
 			Object arrElement = adapter.get(arrayInstance, i);
 			String elementIndexName = Array.methods.getArrayIndexName(i);
-			contentValues = methods.setTypedObject(contentValues, elementIndexName, arrElement);
+			contentValues = methods.setTypedObject(contentValues, elementIndexName, arrElement, arrElement.getClass());
 		}
 
 		final String arrTabName = Array.methods.getArrayName(field, tableName);
